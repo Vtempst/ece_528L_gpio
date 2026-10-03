@@ -12,7 +12,7 @@ The GPIO lab interfaces with the following:
 
 ## Overview
 
-The lab introduced GPIO programming on the MSP432 LaunchPad. It included configuring pins as inputs/outputs, reading buttons and switches, and using LEDs and the RGB LED.
+The lab introduces GPIO programming on the MSP432 LaunchPad. It includes configuring pins as inputs/outputs, reading buttons and switches, and using LEDs and the RGB LED.
 
 The PMOD 8LD and PMOD SWT are connected to the header pins of the MSP432 LaunchPad. The MSP432 LaunchPad also uses a 48 MHz clock.
 
@@ -25,17 +25,17 @@ By clearing SEL0 and SEL1 register, it configures the pins as GPIO pins instead 
 PX->SEL0
 PX->SEL1
 ```
-By setting DIR register to 1, it decides that the GPIO pin is an output. While setting it to 0, it decides that the pin is an input.
+By setting DIR register to 1, it decides that the GPIO pin is an output. While setting it to 0, the pin is an input.
 ```
 PX->DIR
 ```
-The internal resistor can be configured as either a pull-up resistor or pull-down resistor. 
+The internal resistor can be configured to be either a pull-up resistor or pull-down resistor. 
 
-By setting the REN register to 1, it enables the pin's internal resistor
+By setting the REN register to 1, it enables the pin's internal resistor.
 ```
 PX->REN
 ```
-By setting the OUT register to 1, it chooses that the internal resistor is a pull-up resistor.
+By setting the OUT register to 1, the internal resistor is a pull-up resistor while setting it to 0, the internal resistor is a pull-down resistor.
 
 ```
 PX->OUT
