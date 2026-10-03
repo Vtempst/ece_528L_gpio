@@ -51,7 +51,7 @@ When SWT3 is enabled while the other switches are not, an 8-bit ring counter is 
 
 When SWT4 is enabled while the other switches are not, an 8-bit ring counter is displayed on the PMOD 8LD. However, the function turns on the LED for the most significant bit then shifts to the right and wraps back to to the original position.
 
-When SWT0 and and SWT1 are enabled while the other switches are not, it implements a Johnson counter in the PMOND 8LD. It starts the sequence at all zeroes and updates the patter nby shifting left by one bit and inserting the inverted previous MSB into Bit 0.
+When SWT0 and and SWT1 are enabled while the other switches are not, it implements a Johnson counter in the PMOD 8LD. The sequence starts at all zeroes, then shifts left by one bit and inserts the inverted previous MSB into Bit 0.
 
 The functions included a delay rate specified in the lab document. The document also had specific behavior for the LEDs and RGB led depending on which switches are enabled or disabled. It is included in the design as well.
 
